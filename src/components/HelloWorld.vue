@@ -16,8 +16,8 @@ export default {
     return{
       tab:[
         {title:'首页', to:'/front'},
-        {title:'榜单', to:'/list'},
-        {title:'我的', to:'/my'}
+        {title:'推荐', to:'/list'},
+        {title:'搜索', to:'/search'}
       ]
     }
   },

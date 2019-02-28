@@ -4,7 +4,7 @@
       <div class="lrc" ref='lrc'>
         {{getAllKey}}
           <p v-show='(parseInt(currentTime) >= keyArr[index]) && (parseInt(currentTime) < keyArr[index+1])' class="lrc-p" v-for='(item , key ,index) in lrcData' :key='index'>
-            {{item}}---time:{{parseInt(currentTime)}}
+            {{item}}
           </p>
       </div>
     </div>
@@ -73,5 +73,10 @@ export default {
 <style lang="less" scoped>
 .lrc{
   text-align:center;
+  p{
+    font-size:0.75rem;
+    color:rgb(118, 83, 243);
+    margin-top:1rem;
+  }
 }
 </style>

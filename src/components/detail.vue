@@ -32,7 +32,7 @@ export default {
     this.$axios.get(playUrl)
     .then(res => 
     {
-      //console.log(res)            //单支音乐详情
+      console.log(res)            //单支音乐详情
       this.lrclink=res.data.songinfo.lrclink //单支歌词
       this.source=res.data.bitrate.file_link
       this.src=res.data.songinfo.pic_big
@@ -49,7 +49,6 @@ export default {
       this.$refs.player.addEventListener('canplay',this._durationTime)
     },
     removeEventListeners(){
-      
       this.$refs.player.removeEventListener('timeupdate',this._currentTime)
       this.$refs.player.removeEventListener('canplay',this._durationTime)
     },

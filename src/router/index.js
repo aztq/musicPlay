@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import front from '@/components/front'
 import list from '@/components/list'
-import my from '@/components/my'
+import search from '@/components/search'
 
 import more from '@/components/more'
 import detail from '@/components/detail'
@@ -28,9 +28,9 @@ export default new Router({
           component:list
         },
         {
-          path: '/my',
-          name:'my',
-          component:my
+          path: '/search',
+          name:'search',
+          component:search
         },
       ]
     },
