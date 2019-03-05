@@ -9,7 +9,7 @@
       <router-link :to= '{name:"detail", params:{music:item.songname , play: item.songid}}'>
       <div>
       <li>{{item.songname}}</li>
-      <li>{{item.artistname}}</li>
+      <li>歌手：{{item.artistname}}</li>
       </div>
       </router-link>
     </div>
@@ -54,8 +54,10 @@ header{
   }
 }
 .singleSong{
-  background:red;
   margin:1rem;
   font-size:0.75rem;
+}
+li{
+  margin:0.2rem 0;
 }
 </style>
